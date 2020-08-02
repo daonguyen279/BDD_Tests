@@ -22,13 +22,7 @@ public class GoogleHomePage {
         btnSearch.click();
     }
 
-    public boolean checkSearchResult(String searchTerm) {
-        boolean rs = true;
-        List<WebElement> results = DriverManager.getDriver().findElements(By.cssSelector(".r"));
-        for (int i = 0; i < results.size(); i++) {
-            rs = rs && results.get(i).getText().contains(searchTerm);
-        }
-        return rs;
+    public String getSearchBoxText() {
+        return tbxSearchBox.getValue();
     }
-
 }
