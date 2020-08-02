@@ -1,6 +1,6 @@
 Feature: Search
 
-    Scenario: Search
+    Scenario: Validate Google search result
         Given user is on google search page
         And searches for the Beatles
         When user clicks on search button
@@ -10,7 +10,7 @@ Feature: Search
         And all of the video results should be contained the search term
         And all of the people also ask results should be contained the search term
 
-    Scenario: Search And Click First Video
+    Scenario: Validate YouTube result from Google search
         Given user is on google search page
         And searches for the Beatles
         When user clicks on search button
